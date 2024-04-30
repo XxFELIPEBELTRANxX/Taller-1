@@ -2,28 +2,29 @@
 
 let numero1 = parseInt(prompt("ingrese el primer valor"));
  let numero2 = parseInt(prompt("ingrese el segundo valor "));
- let operación=prompt("que operacion quiere hacer");
+ let operación=prompt("que operacion quiere hacer + , -, *, /");
  let resultado;
 
  switch(operación){
      case "+":
          resultado= numero1 + numero2;
-         document.write(resultado);
          break
     
      case "-":
          resultado= numero1 - numero2;
-         document.write(resultado);
          break
 
      case "*":
          resultado= numero1 * numero2;
-         document.write(resultado);
          break
 
      case "/":
          resultado= numero1 / numero2;
          document.write(resultado);
          break
+
+         default:
+            document.write("esta operacion nose encuentra");
+            
  }
- 
+ alert(`el resultado de la operacion entre ${numero1} y ${numero2} es de ${resultado}` )
