@@ -11,6 +11,7 @@ function contadorVocales(string){
         if(vocales.indexOf(string[i])!== -1) // en cada iteracion , se verifica si el caracarter actual en la posi i esta presente en el array vocales 
         cont ++;
     
+         
 
     }
     return cont
